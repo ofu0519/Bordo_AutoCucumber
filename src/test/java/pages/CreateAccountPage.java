@@ -6,6 +6,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import utilities.Driver;
 
+import java.util.List;
+
 public class CreateAccountPage {
 
     public CreateAccountPage(){
@@ -21,8 +23,8 @@ public class CreateAccountPage {
     @FindBy(xpath = "//span[normalize-space()='Create an account']")
     public WebElement createAccountButton;
 
-    @FindBy(xpath = "//input[@id='id_gender1']")
-    public WebElement radioTitle;
+    @FindBy(xpath = "//input[@type='radio']")
+    public List<WebElement> radioTitle;
 
     @FindBy(xpath = "//input[@id='customer_firstname']")
     public WebElement firstName;
@@ -81,6 +83,8 @@ public class CreateAccountPage {
     @FindBy(xpath = "//input[@id='alias']")
     public WebElement alias;
 
+    @FindBy (xpath = "//span[normalize-space()='Register']")
+    public WebElement register;
 
     @FindBy(xpath = "//*[@class='page-heading']")
     public WebElement authenticationElement;
@@ -89,4 +93,6 @@ public class CreateAccountPage {
     @FindBy(xpath = "//h3[normalize-space()='Your personal information']")
     public WebElement personalInformationElement;
 
+    @FindBy(xpath = "//p[@class='info-account']")
+    public  WebElement verifyAccount;
 }

@@ -1,6 +1,6 @@
 Feature:Create account
 
-  @wip
+  @Account
   Scenario:User can sign in with valid credential
     Given the homepage is opened
     When clicks sign in button and enter the email for creating account
@@ -9,6 +9,4 @@ Feature:Create account
     Then verifies in homepage that account is created
 
 
-    @wip2
-    Scenario: User adds products to the cart
-      Given Signed user on the home page
+

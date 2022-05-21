@@ -11,8 +11,8 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "stepdefinitions",
         dryRun = false,
-        tags = "@wip"
+        tags = "@Account"
 )
 
-public class runner {
+public class Runner {
 }
